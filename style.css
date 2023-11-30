@@ -1,0 +1,134 @@
+/* Style the body of the page */
+body {
+    font-family: sans-serif;
+    background: linear-gradient(to right, #7b9a9e, #717b89); /* Soothing gradient background */
+    color: #333; /* Dark gray text color */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the quiz container */
+  #quiz {
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  }
+  
+  /* Style the questions section */
+  #questions {
+    margin-bottom: 20px;
+  }
+  
+  /* Style the question cards */
+  .question {
+    margin-bottom: 10px;
+    background-color: #fff; /* White background for question cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle drop shadow */
+    font-size: 16px; /* Slightly smaller font size */
+  }
+  
+  /* Style the question text */
+  .question p {
+    font-weight: bold;
+    color: #333; /* Dark gray text color */
+    font-size: 18px; /* Larger font size for question text */
+  }
+
+  /* Remove default list styles from answer choices */
+  .question ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style the answer choices container */
+  .answer-choices {
+    background-color: #e6e6e6; /* Slightly darker background for answer choices */
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow-y: hidden;
+  }
+  
+  /* Style the individual answer choices */
+  .answer-choice {
+    max-width: 710px; /* Set a maximum width for answer choices */
+    margin: 0 5px;
+    display: inline-block;
+    background-color: #d8d88b; /* Light green background */
+    padding: 10px 20px; /* Increased padding for larger buttons */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 50px; /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px; /* Slightly bolder font size */
+    font-weight: 600; /* Slightly bolder font weight */
+    width: 100%; /* Stretch to fit the background */
+    margin-bottom: 10px; /* Add some spacing between buttons */
+  }
+  
+  /* Change background color on hover */
+  .answer-choice:hover {
+    background-color: #e6e6fa; /* Light purple background on hover */
+  }
+  
+  /* Highlight the selected answer choice */
+  .answer-choice.selected {
+    background-color: #aaaa68; /* Blue background for selected answer */
+    color: #fff; /* White text color for selected answer */
+  }
+    
+  /* Style the score panel */
+  #score {
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #bbb; /* Slightly darker background for score panel */
+    padding: 10px;
+    border-radius: 5px;
+    color: #333; /* Dark gray text color */
+  }
+  
+  /* Style the score text */
+  #score p {
+    font-weight: bold;
+    color: #333; /* Dark gray text color */
+  }
+  
+  /* Style the score value */
+  #score span {
+    color: #10995b; /* Blue color for score value */
+  }
+  
+  /* Add these styles for the message element */
+#message {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Style for correct message */
+#message.correct {
+  background-color: #8FDB8F; /* Light green background */
+  color: #2D652B; /* Dark green text color */
+}
+
+/* Style for incorrect message */
+#message.incorrect {
+  background-color: #FFB6B6; /* Light red background */
+  color: #8C2626; /* Dark red text color */
+}
+
+/* Style the "Game Over" message */
+#message.game-over {
+  font-size: 24px;
+  color: #ff0000; /* Red color for emphasis */
+  font-weight: bold;
+}
